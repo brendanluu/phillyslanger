@@ -1,5 +1,4 @@
 body{
- width: 100%;
  font-family: arial;
  background-color: black;
 }
@@ -30,6 +29,7 @@ h1{
   z-index: 5;
   position: relative;
   transform: rotate(-1deg);
+  pointer-events: none;
 }
 
 .button {
@@ -118,73 +118,153 @@ form{
   transform: rotate(3deg);
 }
 
-.cards{
+#cards{
   z-index: 1;
   position: absolute;
   border-top: 10px;
 }
 
-.yungboul{
+#yungboul{
   transform: rotate(-193deg) translate(20px,-110px);
+  cursor: pointer;
 }
 
-.ocky{
+#ocky{
   transform: rotate(11deg) translate(410px,-10px);
+  cursor: pointer;
 }
 
-.widdout{
+#widdout{
   transform: rotate(-199deg) translate(-130px,-50px);
+  cursor: pointer;
 }
-.bread{
+#bread{
   transform: rotate(31deg) translate(60px,-10px);
+  cursor: pointer;
 }
-.jawn{
+#jawn{
   transform: rotate(-109deg) translate(6px,90px);
+  cursor: pointer;
 }
-.salpeppaketchup{
+#salpeppaketchup{
   transform: rotate(-9deg) translate(20px,140px);
+  cursor: pointer;
 }
-.drawlin{
+#drawlin{
   transform: rotate(-29deg) translate(-3px,140px);
+  cursor: pointer;
 }
-.outtapocket{
+#outtapocket{
   transform: rotate(21deg) translate(37px,190px);
+  cursor: pointer;
 }
-.wildin{
+#wildin{
   transform: rotate(1deg) translate(-303px,200px);
+  cursor: pointer;
 }
-.whiz{
+#whiz{
   transform: rotate(-168deg) translate(577px,-340px);
+  cursor: pointer;
 }
-.wooderice{
+#wooderice{
   transform: rotate(12deg) translate(637px,-110px);
+  cursor: pointer;
 }
-.ard{
+#ard{
   transform: rotate(-8deg) translate(437px,120px);
+  cursor: pointer;
 }
 
-.help{
+#help{
   transform: rotate(-8deg) translate(479px,154px);
+  cursor: pointer;
 
 }
 
-.overlay{
+#whizbig{
+  transform: rotate(7deg) translate(307px,154px);
   z-index: 101;
-  width: 850px;
-  height: 620px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-
+  width: 313px;
+  position: relative;
 }
 
-.yungboulbig{
+#drawlinbig{
+  transform: rotate(7deg) translate(307px,154px);
+  z-index: 101;
+  width: 313px;
+  position: relative;
+}
+
+#salpeppaketchupbig{
+  transform: rotate(7deg) translate(307px,154px);
+  z-index: 101;
+  width: 313px;
+  position: relative;
+}
+
+#ardbig{
+  transform: rotate(7deg) translate(307px,154px);
+  z-index: 101;
+  width: 313px;
+  position: relative;
+}
+
+#jawnbig{
+  transform: rotate(7deg) translate(307px,154px);
+  z-index: 101;
+  width: 313px;
+  position: relative;
+}
+
+#yungboulbig{
   transform: rotate(7deg) translate(307px,44px);
   z-index: 101;
   position: relative;
+  width: 222px;
 }
+
+#woodericebig{
+  transform: rotate(7deg) translate(307px,154px);
+  z-index: 101;
+  width: 313px;
+  position: relative;
+}
+
+#ockybig{
+  transform: rotate(7deg) translate(307px,154px);
+  z-index: 101;
+  width: 313px;
+  position: relative;
+}
+
+#outtapocketbig{
+  transform: rotate(7deg) translate(307px,154px);
+  z-index: 101;
+  width: 313px;
+  position: relative;
+}
+
+#wildinbig{
+  transform: rotate(7deg) translate(307px,154px);
+  z-index: 101;
+  width: 313px;
+  position: relative;
+}
+
+#widdoutbig{
+  transform: rotate(7deg) translate(307px,154px);
+  z-index: 101;
+  width: 313px;
+  position: relative;
+}
+
+#breadbig{
+  transform: rotate(7deg) translate(307px,154px);
+  z-index: 101;
+  width: 313px;
+  position: relative;
+}
+
 .bg{
   background-color: black;
   z-index: 101;
@@ -202,9 +282,13 @@ h2{
   font-size: 18px;
   line-height: 14px;
   z-index: 102;
+  margin-top: 42px;
   position: absolute;
-  transform: rotate(7deg) translate(325px,68px);
 
+}
+
+#overimg{
+  position: absolute;
 }
 .close{
   font-family: times , serif;
@@ -214,6 +298,150 @@ h2{
   color: black;
   line-height: 14px;
   z-index: 102;
+  right: 0px;
   position: absolute;
-  transform: rotate(7deg) translate(534px,36px);
+}
+
+#yungboulover{
+  z-index: 101;
+  width: 850px;
+  height: 620px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  display: none;
+}
+
+#whizover{
+  z-index: 101;
+  width: 850px;
+  height: 620px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  display: none;
+}
+
+#drawlinover{
+  z-index: 101;
+  width: 850px;
+  height: 620px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  display: none;
+}
+
+#salpeppaketchupover{
+  z-index: 101;
+  width: 850px;
+  height: 620px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  display: none;
+}
+
+#ardover{
+  z-index: 101;
+  width: 850px;
+  height: 620px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  display: none;
+}
+
+#jawnover{
+  z-index: 101;
+  width: 850px;
+  height: 620px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  display: none;
+}
+
+#woodericeover{
+  z-index: 101;
+  width: 850px;
+  height: 620px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  display: none;
+}
+
+#ockyover{
+  z-index: 101;
+  width: 850px;
+  height: 620px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  display: none;
+}
+
+#outtapocketover{
+  z-index: 101;
+  width: 850px;
+  height: 620px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  display: none;
+}
+
+#wildinover{
+  z-index: 101;
+  width: 850px;
+  height: 620px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  display: none;
+}
+
+#widdoutover{
+  z-index: 101;
+  width: 850px;
+  height: 620px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  display: none;
+}
+
+#breadover{
+  z-index: 101;
+  width: 850px;
+  height: 620px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  display: none;
 }

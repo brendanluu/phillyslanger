@@ -1,10 +1,117 @@
 //
 // Declare global vars here
 
+
 var firstName;
 var birthDayObj;
 
 var weekDays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+
+var capObj = document.getElementById("whiz");
+
+var sagObj = document.getElementById("drawlin");
+
+var scoObj = document.getElementById("salpeppaketchup");
+
+var libObj = document.getElementById("ard");
+
+var virObj = document.getElementById("jawn");
+
+var leoObj = document.getElementById("yungboul");
+
+var canObj = document.getElementById("wooderice");
+
+var gemObj = document.getElementById("ocky");
+
+var tauObj = document.getElementById("outtapocket");
+
+var ariObj = document.getElementById("wildin");
+
+var pisObj = document.getElementById("widdout");
+
+var aquObj = document.getElementById("bread");
+
+capObj.addEventListener('click', function (evt){
+  console.log('clicked');
+  document.getElementById('whizover').style.display='inline';
+},false);
+
+sagObj.addEventListener('click', function (evt){
+  console.log('clicked');
+  document.getElementById('drawlinover').style.display='inline';
+},false);
+
+scoObj.addEventListener('click', function (evt){
+  console.log('clicked');
+  document.getElementById('salpeppaketchupover').style.display='inline';
+},false);
+
+libObj.addEventListener('click', function (evt){
+  console.log('clicked');
+  document.getElementById('ardover').style.display='inline';
+},false);
+
+virObj.addEventListener('click', function (evt){
+  console.log('clicked');
+  document.getElementById('jawnover').style.display='inline';
+},false);
+
+leoObj.addEventListener('click', function (evt){
+  console.log('clicked');
+  document.getElementById('yungboulover').style.display='inline';
+},false);
+
+canObj.addEventListener('click', function (evt){
+  console.log('clicked');
+  document.getElementById('woodericeover').style.display='inline';
+},false);
+
+gemObj.addEventListener('click', function (evt){
+  console.log('clicked');
+  document.getElementById('ockyover').style.display='inline';
+},false);
+
+tauObj.addEventListener('click', function (evt){
+  console.log('clicked');
+  document.getElementById('ockyover').style.display='inline';
+},false);
+
+ariObj.addEventListener('click', function (evt){
+  console.log('clicked');
+  document.getElementById('outtapocketover').style.display='inline';
+},false);
+
+ariObj.addEventListener('click', function (evt){
+  console.log('clicked');
+  document.getElementById('wildinover').style.display='inline';
+},false);
+
+pisObj.addEventListener('click', function (evt){
+  console.log('clicked');
+  document.getElementById('widdoutover').style.display='inline';
+},false);
+
+aquObj.addEventListener('click', function (evt){
+  console.log('clicked');
+  document.getElementById('breadover').style.display='inline';
+},false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function calZodiac() {
   var outputArea = document.getElementById('displayMsg');
@@ -49,6 +156,7 @@ function calZodiac() {
     astroSign = 'Vir';
   } else if ((monthNum == 7 && dayNum >= 23) || (monthNum == 8 && dayNum <= 22)) {
     astroSign = 'Leo';
+    console.log('leo');
   } else if ((monthNum == 6 && dayNum >= 22) || (monthNum == 7 && dayNum <= 22)) {
     astroSign = 'Can';
   } else if ((monthNum == 5 && dayNum >= 21) || (monthNum == 6 && dayNum <= 21)) {
@@ -85,6 +193,7 @@ function calZodiac() {
   // retun false to prevent form from resetting
   return false;
 }
+
 
 //new function
 function calculate_age (bMonth, bDay, bYear){
