@@ -31,84 +31,78 @@ var pisObj = document.getElementById("widdout");
 
 var aquObj = document.getElementById("bread");
 
+var helpObj = document.getElementById("help");
+
 capObj.addEventListener('click', function (evt){
-  console.log('clicked');
+  playAudio('whizaudio');
   document.getElementById('whizover').style.display='inline';
 },false);
 
 sagObj.addEventListener('click', function (evt){
-  console.log('clicked');
+  playAudio('drawlinaudio');
   document.getElementById('drawlinover').style.display='inline';
 },false);
 
 scoObj.addEventListener('click', function (evt){
-  console.log('clicked');
+  playAudio('salpeppaketchupaudio');
   document.getElementById('salpeppaketchupover').style.display='inline';
 },false);
 
 libObj.addEventListener('click', function (evt){
-  console.log('clicked');
+  playAudio('ardaudio');
   document.getElementById('ardover').style.display='inline';
 },false);
 
 virObj.addEventListener('click', function (evt){
-  console.log('clicked');
+  playAudio('jawnaudio');
   document.getElementById('jawnover').style.display='inline';
 },false);
 
 leoObj.addEventListener('click', function (evt){
-  console.log('clicked');
+  playAudio('yungboulaudio');
   document.getElementById('yungboulover').style.display='inline';
 },false);
 
 canObj.addEventListener('click', function (evt){
-  console.log('clicked');
+  playAudio('woodericeaudio');
   document.getElementById('woodericeover').style.display='inline';
 },false);
 
 gemObj.addEventListener('click', function (evt){
-  console.log('clicked');
+  playAudio('ockyaudio');
   document.getElementById('ockyover').style.display='inline';
 },false);
 
 tauObj.addEventListener('click', function (evt){
-  console.log('clicked');
-  document.getElementById('ockyover').style.display='inline';
-},false);
-
-ariObj.addEventListener('click', function (evt){
-  console.log('clicked');
+  playAudio('outtapocketaudio');
   document.getElementById('outtapocketover').style.display='inline';
 },false);
 
 ariObj.addEventListener('click', function (evt){
-  console.log('clicked');
+  playAudio('wildinaudio');
   document.getElementById('wildinover').style.display='inline';
 },false);
 
 pisObj.addEventListener('click', function (evt){
-  console.log('clicked');
+  playAudio('widdoutaudio');
   document.getElementById('widdoutover').style.display='inline';
 },false);
 
 aquObj.addEventListener('click', function (evt){
-  console.log('clicked');
+  playAudio('breadaudio');
   document.getElementById('breadover').style.display='inline';
 },false);
 
+helpObj.addEventListener('click', function (evt){
+  document.getElementById('helpover').style.display='inline';
+},false);
 
 
+function playAudio(whichSound) {
+    //play sound based on whichSound parameter
+    document.getElementById(whichSound).play();
 
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -156,7 +150,6 @@ function calZodiac() {
     astroSign = 'Vir';
   } else if ((monthNum == 7 && dayNum >= 23) || (monthNum == 8 && dayNum <= 22)) {
     astroSign = 'Leo';
-    console.log('leo');
   } else if ((monthNum == 6 && dayNum >= 22) || (monthNum == 7 && dayNum <= 22)) {
     astroSign = 'Can';
   } else if ((monthNum == 5 && dayNum >= 21) || (monthNum == 6 && dayNum <= 21)) {

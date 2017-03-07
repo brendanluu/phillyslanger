@@ -270,20 +270,32 @@ form{
   z-index: 101;
   width: 840px;
   height: 620px;
-
   right: 0;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
   opacity: .69;
 }
+
+.helpbg{
+  background-color: black;
+  width: 840px;
+  height: 620px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
 h2{
   font-family: times , serif;
-  font-size: 18px;
-  line-height: 14px;
+  font-size: 20px;
+  line-height: 15px;
   z-index: 102;
-  margin-top: 42px;
+  margin-top: 34px;
   position: absolute;
+  margin-left: 4px;
+  font-weight: 100;
+
 
 }
 
@@ -298,7 +310,8 @@ h2{
   color: black;
   line-height: 14px;
   z-index: 102;
-  right: 0px;
+  right: 5px;
+  top: 5px;
   position: absolute;
 }
 
@@ -438,6 +451,18 @@ h2{
   z-index: 101;
   width: 850px;
   height: 620px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  display: none;
+}
+
+#helpover{
+  z-index: 200;
+  width: 828px;
+  height: 623px;
   left: 0;
   right: 0;
   margin-left: auto;
